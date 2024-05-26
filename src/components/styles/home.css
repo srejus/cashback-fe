@@ -2,6 +2,14 @@
     padding: 20px;
 }
 
+.header-img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
 .home-header-div{
     width: 100%;
     height: 250px;
@@ -34,6 +42,13 @@
     align-items: center;
 }
 
+.shop-cover{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
 @media(max-width:852px) {
     .category-card {
         border: 0.7px solid #ddd;
@@ -41,7 +56,7 @@
         margin: 10px;
         display: flex;
         flex-direction: row;
-        width: 42%;
+        width: 44%;
         align-items: center;
     }
 }
