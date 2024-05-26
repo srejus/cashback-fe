@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import {Route, Routes} from 'react-router-dom';
 
 import Login from './components/Login';
 import VerifyOTP from './components/verifyOTP';
@@ -9,9 +10,10 @@ import ViewShop from './components/ViewShop';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <ViewShop/>
-      </header>
+     <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/view-shop/:id" element={<ViewShop/>}/>
+     </Routes>
     </div>
   );
 }
